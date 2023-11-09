@@ -1,6 +1,7 @@
 import 'package:cockies_ui/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/Cart.dart';
 import '../widgets/avatar.dart';
 import '../widgets/personal_infor.dart';
 
@@ -18,7 +19,10 @@ class HomePage extends StatelessWidget {
               Row(
                 children: [
                   Avatar(),
-                  PersonalInfo()
+                  SizedBox(width: 16,),
+                  PersonalInfo(),
+                  Spacer(),
+                  Cart(),
                 ],
               ),
             ],
@@ -26,5 +30,7 @@ class HomePage extends StatelessWidget {
         ));
   }
 }
+
+
 
 
