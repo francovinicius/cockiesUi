@@ -2,6 +2,7 @@ import 'package:cockies_ui/colors.dart';
 import 'package:cockies_ui/pages/widgets/cookie.dart';
 import 'package:flutter/material.dart';
 import '../../models/cookies.dart';
+import '../widgets/bottom_nav_bar.dart';
 import '../widgets/cart.dart';
 import '../widgets/avatar.dart';
 import '../widgets/cookies_bar.dart';
@@ -18,6 +19,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         backgroundColor: background,
         body: body(size: size),
+        bottomNavigationBar: const BottomNavBar()
     );
   }
 }
